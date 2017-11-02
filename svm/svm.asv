@@ -1,0 +1,8 @@
+close all
+clear all
+load('training_matrix.txt');
+
+
+svmStruct = svmtrain(training_matrix(:,2:3),training_matrix(:,1),'showplot',true,'Method','SMO','Kernel_Function','rbf','Autoscale','false');
+
+
